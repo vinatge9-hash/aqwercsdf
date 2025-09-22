@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Spirit Box | Home</title>
+  <meta name='description' content='Spirit Box is a techy, minimalist chatbot website featuring a clean, modern interface.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='min-h-screen bg-gray-50 text-gray-900 opacity-0 transition-opacity duration-700'>
+  <!-- Header / Nav -->
+  <header class='bg-white/80 backdrop-blur-md fixed w-full z-50'>
+    <nav class='max-w-7xl mx-auto px-4 py-4 flex items-center justify-between'>
+      <a href='index.html' class='text-2xl font-bold text-gray-800 no-underline hover:no-underline transition-all duration-300'>Spirit Box</a>
+      <button id='nav-toggle' aria-label='Toggle navigation' class='md:hidden p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-all duration-300'>
+        <svg class='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+          <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'></path>
+        </svg>
+      </button>
+      <ul id='nav-menu' class='hidden md:flex space-x-6 text-gray-700'>
+        <li><a href='index.html' class='hover:scale-105 transition-all duration-300'>Home</a></li>
+        <li><a href='about.html' class='hover:scale-105 transition-all duration-300'>About</a></li>
+        <li><a href='contact.html' class='hover:scale-105 transition-all duration-300'>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class='relative min-h-screen flex items-center justify-center'>
+      <img src='https://images.pexels.com/photos/28398620/pexels-photo-28398620.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Tech background' class='absolute inset-0 w-full h-full object-cover' style='opacity:0.6'>
+      <div class='absolute inset-0 bg-black/40'></div>
+      <div class='relative z-10 text-center px-6'>
+        <h1 class='text-5xl md:text-6xl font-extrabold text-white mb-4'>Spirit <span class='text-cyan-400'>Box</span> AI Chatbot</h1>
+        <p class='text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-6'>A sleek, minimalist chatbot experience that blends human warmth with modern tech.</p>
+        <div class='flex flex-wrap justify-center gap-4'>
+          <a href='#demo' class='inline-block bg-cyan-500 text-white px-6 py-3 rounded-full hover:brightness-110 hover:scale-105 transition-all duration-300'>Try Demo</a>
+          <a href='about.html' class='inline-block bg-white/20 border border-white text-white px-6 py-3 rounded-full hover:bg-white/40 hover:scale-105 transition-all duration-300'>Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id='testimonials' class='py-16 bg-gray-50 fade-in opacity-0 translate-y-6'>
+      <div class='max-w-6xl mx-auto px-4'>
+        <span class='inline-block px-3 py-1 rounded-full bg-cyan-100 text-cyan-700 text-sm font-semibold mb-4'>Testimonials</span>
+        <h2 class='text-3xl font-bold mb-8'>What Our Friends Say</h2>
+        <div class='grid grid-cols-1 md:grid-cols-3 gap-8'>
+          <article class='bg-white rounded-lg shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 p-6'>
+            <div class='mb-3'>
+              <span class='inline-flex text-yellow-400' aria-label='Five stars'>
+                <svg width='20' height='20' viewBox='0 0 24 24' fill='#FBBF24' class='inline-block mx-0.5' aria-hidden='true'><path d='M12 17.3l6.18 3.7-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.57L5.82 21L12 17.3z'/></svg>
+                <svg width='20' height='20' viewBox='0 0 24 24' fill='#FBBF24' class='inline-block mx-0.5' aria-hidden='true'><path d='M12 17.3l6.18 3.7-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.57L5.82 21L12 17.3z'/></svg>
+                <svg width='20' height='20' viewBox='0 0 24 24' fill='#FBBF24' class='inline-block mx-0.5' aria-hidden='true'><path d='M12 17.3l6.18 3.7-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.57L5.82 21L12 17.3z'/></svg>
+                <svg width='20' height='20' viewBox='0 0 24 24' fill='#FBBF24' class='inline-block mx-0.5' aria-hidden='true'><path d='M12 17.3l6.18 3.7-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.57L5.82 21L12 17.3z'/></svg>
+                <svg width='20' height='20' viewBox='0 0 24 24' fill='#FBBF24' class='inline-block mx-0.5' aria-hidden='true'><path d='M12 17.3l6.18 3.7-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.57L5.82 21L12 17.3z'/></svg>
+              </span>
+            </div>
+            <blockquote class='text-gray-700 mb-3'>"Spirit Box keeps conversations crisp and insightful. A tiny helper with big heart."</blockquote>
+            <div class='font-semibold'>Anita Rao</div>
+            <div class='text-sm text-gray-500'>Hyderabad, India</div>
+          </article>
+
+          <article class='bg-white rounded-lg shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 p-6'>
+            <div class='mb-3'>
+              <span class='inline-flex text-yellow-400' aria-label='Five stars'>
+                <svg width='20' height='20' viewBox='0 0 24 24' fill='#FBBF24' class='inline-block mx-0.5'><path d='M12 17.3l6.18 3.7-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.57L5.82 21L12 17.3z'/></svg>
+              </span>
+            </div>
+            <blockquote class='text-gray-700 mb-3'>"Minimal design with maximum clarity. Exactly what I needed."</blockquote>
+            <div class='font-semibold'>Rahul Menon</div>
+            <div class='text-sm text-gray-500'>Hyderabad, India</div>
+          </article>
+
+          <article class='bg-white rounded-lg shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 p-6'>
+            <div class='mb-3'>
+              <span class='inline-flex text-yellow-400' aria-label='Five stars'>
+                <svg width='20' height='20' viewBox='0 0 24 24' fill='#FBBF24' class='inline-block mx-0.5'><path d='M12 17.3l6.18 3.7-1.64-7.19L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.57L5.82 21L12 17.3z'/></svg>
+              </span>
+            </div>
+            <blockquote class='text-gray-700 mb-3'>"Clean, fast, and friendly. Perfect for a tech startup."</blockquote>
+            <div class='font-semibold'>Meera Kapoor</div>
+            <div class='text-sm text-gray-500'>Hyderabad, India</div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class='bg-gray-900 text-gray-100'>
+    <div class='max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <section>
+        <h3 class='text-xl font-semibold mb-2'>Spirit Box</h3>
+        <p class='text-gray-400'>Cybernetic chatbot studio. Designing calm, minimal interfaces.</p>
+        <div class='flex space-x-3 mt-4'>
+          <a href='#' class='text-gray-400 hover:text-white transition-all duration-300' aria-label='Twitter'>Twitter</a>
+          <a href='#' class='text-gray-400 hover:text-white transition-all duration-300' aria-label='GitHub'>GitHub</a>
+        </div>
+      </section>
+
+      <nav aria-label='Footer quick links'>
+        <h4 class='text-lg font-semibold mb-2'>Links</h4>
+        <ul class='space-y-2'>
+          <li><a href='index.html' class='hover:brightness-110 transition-all duration-300'>Home</a></li>
+          <li><a href='about.html' class='hover:brightness-110 transition-all duration-300'>About</a></li>
+          <li><a href='contact.html' class='hover:brightness-110 transition-all duration-300'>Contact</a></li>
+        </ul>
+      </nav>
+
+      <section aria-label='Newsletter signup'>
+        <h4 class='text-lg font-semibold mb-2'>Newsletter</h4>
+        <p class='text-gray-400 mb-3'>Get updates on new features and release notes.</p>
+        <form action='#' method='post' class='flex'>
+          <input type='email' name='email' placeholder='Your email' required class='w-full px-3 py-2 rounded-l-md bg-white text-gray-800 outline-none'/>
+          <button type='submit' class='bg-cyan-500 text-white px-3 py-2 rounded-r-md hover:bg-cyan-600 transition-all duration-300'>Subscribe</button>
+        </form>
+      </section>
+    </div>
+    <hr class='border-gray-700 mx-4'>
+    <p class='text-center text-gray-400 pb-4'>&copy; 2025 Spirit Box. All rights reserved. Location: Hyderabad, Telangana, India.</p>
+  </footer>
+
+  <script>
+    // Navbar toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Fade-in on load
+    window.addEventListener('load', () => {
+      document.body.classList.add('opacity-100');
+    });
+
+    // Simple in-view animations for sections
+    const fadeIns = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0', 'translate-y-6');
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeIns.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
